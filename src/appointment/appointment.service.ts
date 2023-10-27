@@ -17,6 +17,8 @@ export class AppointmentService {
             throw new Error('La finalizacion de la cita debe ser despues de la de inicio')
         }
 
+        console.log("Test ci/cd");
+
         return {
             ...appointmentData, 
             confirmed: false
